@@ -19,7 +19,7 @@ colored-man-pages
 magic-enter
 ssh-agent
 extract
-tmux
+#tmux
 git
 docker docker-compose kubectl
 zsh-users/zsh-completions
