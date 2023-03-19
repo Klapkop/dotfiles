@@ -1,11 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-[ -z "$SSH_CONNECTION" ] && ZSH_TMUX_AUTOSTART="true"
 ZSH_AUTOSUGGEST_USE_ASYNC="true"
 #ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste accept-line)
 
@@ -17,7 +9,7 @@ antigen bundles <<EOBUNDLES
 command-not-found
 colored-man-pages
 magic-enter
-ssh-agent
+#ssh-agent
 extract
 #tmux
 git
@@ -28,8 +20,8 @@ zsh-users/zsh-syntax-highlighting
 HeroCC/LS_COLORS
 rupa/z
 EOBUNDLES
-antigen theme romkatv/powerlevel10k
-source $HOME/.zsh/themes/p10k-lean.zsh
+antigen theme robbyrussell
+#source $HOME/.zsh/themes/p10k-lean.zsh
 #antigen theme $HOME/.zsh/themes bira-cust --no-local-clone
 
 zstyle ':completion:*:*:docker:*' option-stacking yes
